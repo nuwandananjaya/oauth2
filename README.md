@@ -27,8 +27,8 @@ CREATE TABLE IF NOT EXISTS authorities (
   PRIMARY KEY(username, authority)
 );
 
-#The client_secret was generated using bcrypt.
-#The prefix {bcrypt} is required because we’ll using Spring Security 5.x’s new feature of DelegatingPasswordEncoder.
+# The client_secret was generated using bcrypt.
+# The prefix {bcrypt} is required because we’ll using Spring Security 5.x’s new feature of DelegatingPasswordEncoder.
 
 
 INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_grant_types, authorities, access_token_validity)
