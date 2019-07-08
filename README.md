@@ -34,4 +34,14 @@ CREATE TABLE IF NOT EXISTS authorities (
 INSERT INTO oauth_client_details (client_id, client_secret, scope, authorized_grant_types, authorities, access_token_validity)
   VALUES ('clientId', '{bcrypt}$2a$10$vCXMWCn7fDZWOcLnIEhmK.74dvK1Eh8ae2WrWlhr2ETPLoxQctN4.', 'read,write', 'password,refresh_token,client_credentials', 'ROLE_CLIENT', 300);
 
+
+# Postman Test
+http://localhost:8085/oauth/token?grant_type=password&username=user&password=pass
+
+# authorization Tab
+ Select basic auth
+
+Username : clientid
+Password : secret
+
     
